@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "EnergyBasedMonkeys"
+authors = [
+    {name = "Gabe Cemaj", email = "gc2728@nyu.edu"},
+    {name = "Sanho Lee", email = "shl8607@nyu.edu"},
+    {name = "Brian Yin", email = "bny212@nyu.edu"}
+]
+description = "Code for DL2023 Final Project for team Energy Based Monkeys"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "torch",
+    "numpy",
+    "typer[all]",
+    "imageio",
+    "einops",
+    "torchmetrics",
+    "torchvision",
+]
+dynamic = ["version"]
+
+[tool.setuptools]
+packages = ["video_generation"]
+
+[project.scripts]
+transformer = "video_generation.scripts.transformer:main"
+segnet = "video_generation.scripts.segnet:main"
