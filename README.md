@@ -14,7 +14,7 @@ transformer --help
 ```
 
 ## Sgenet Model
-The first part of the pipeline is to train a Segnet Model, the dataset is assumed to be in a "<dir>/train" and "<dir>/val" for training and "<dir>/hidden" for inference
+The first part of the pipeline is to train a Segnet Model, the dataset is assumed to be in a `<dir>/train` and `<dir>/val` for training and `<dir>/hidden` for inference
 
 ### Train
 
